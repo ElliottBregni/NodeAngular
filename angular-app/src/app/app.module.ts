@@ -17,7 +17,7 @@ import { SearchComponent } from './Components/search/search.component';
 import { UserComponent } from './Components/user/user.component';
 import { ArticleComponent } from './Components/article/article.component';
 import { LoginComponent } from './Components/login/login.component';
-import { AlertComponent } from './Components/alert/alert.component';
+
 
 
 @NgModule({
@@ -30,7 +30,7 @@ import { AlertComponent } from './Components/alert/alert.component';
     UserComponent,
     ArticleComponent,
     LoginComponent,
-    AlertComponent,
+
    
   ],
   imports: [
@@ -40,7 +40,7 @@ import { AlertComponent } from './Components/alert/alert.component';
     HttpModule,
     CommonModule,
     FormsModule,
-    NgbModalModule,z
+    NgbModalModule,
     FlatpickrModule.forRoot(),
     CalendarModule.forRoot({
       provide: DateAdapter,
