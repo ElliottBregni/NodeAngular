@@ -8,12 +8,14 @@ import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
-import { CalendarComponent } from './calendar/calendar.component';
-import { NavMenuComponent } from './navmenu/navmenu.component';
-import { HomeComponent } from './home/home.component';
+import { CalendarComponent } from './Components/calendar/calendar.component';
+import { NavMenuComponent } from './Components/navmenu/navmenu.component';
+import { HomeComponent } from './Components/home/home.component';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SearchComponent } from './search/search.component';
+import { SearchComponent } from './Components/search/search.component';
+import { UserComponent } from './Components/user/user.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SearchComponent } from './search/search.component';
     CalendarComponent,
     HomeComponent,
     NavMenuComponent,
-    SearchComponent
+    SearchComponent,
+    UserComponent,
+   
   ],
   imports: [
 
@@ -40,7 +44,8 @@ import { SearchComponent } from './search/search.component';
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'calendar', component: CalendarComponent },
-    ])
+    ]),
+     BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
