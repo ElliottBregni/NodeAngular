@@ -12,13 +12,16 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { NavMenuComponent } from './navmenu/navmenu.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalendarComponent,
     HomeComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    SearchComponent
   ],
   imports: [
 
@@ -37,8 +40,6 @@ import { RouterModule } from '@angular/router';
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'calendar', component: CalendarComponent },
-      { path: '**', redirectTo: 'home' },
-      { path: '**', redirectTo: 'home' }
     ])
   ],
   providers: [],
