@@ -15,6 +15,9 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchComponent } from './Components/search/search.component';
 import { UserComponent } from './Components/user/user.component';
+import { ArticleComponent } from './Components/article/article.component';
+import { LoginComponent } from './Components/login/login.component';
+import { AlertComponent } from './Components/alert/alert.component';
 
 
 @NgModule({
@@ -25,6 +28,9 @@ import { UserComponent } from './Components/user/user.component';
     NavMenuComponent,
     SearchComponent,
     UserComponent,
+    ArticleComponent,
+    LoginComponent,
+    AlertComponent,
    
   ],
   imports: [
@@ -34,7 +40,7 @@ import { UserComponent } from './Components/user/user.component';
     HttpModule,
     CommonModule,
     FormsModule,
-    NgbModalModule,
+    NgbModalModule,z
     FlatpickrModule.forRoot(),
     CalendarModule.forRoot({
       provide: DateAdapter,

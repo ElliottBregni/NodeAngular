@@ -41,7 +41,7 @@ function executeStatement(sql) {
 /*starting point*/
 router.get('/', (req, res) => {
     
-    res.send("api works");
+    res.send(__dirname + '/angular-app/dist/index.html');
 
 });
 /*api/artwork/*/
