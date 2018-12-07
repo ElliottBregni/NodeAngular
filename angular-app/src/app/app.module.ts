@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { CommonModule } from '@angular/common';
@@ -12,11 +13,13 @@ import { CalendarComponent } from './Components/calendar/calendar.component';
 import { NavMenuComponent } from './Components/navmenu/navmenu.component';
 import { HomeComponent } from './Components/home/home.component';
 import { RouterModule } from '@angular/router';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SearchComponent } from './Components/search/search.component';
-import { UserComponent } from './Components/user/user.component';
-import { ArticleComponent } from './Components/article/article.component';
-import { LoginComponent } from './Components/login/login.component';
+
+import 'flatpickr/dist/flatpickr.css';
+//import { SearchComponent } from './Components/search/search.component';
+//import { UserComponent } from './Components/user/user.component';
+//import { ArticleComponent } from './Components/article/article.component';
+//import { LoginComponent } from './Components/login/login.component';
+//import { ArticleCommentComponent } from './Components/article/article-comment/article-comment.component';
 
 
 
@@ -26,10 +29,11 @@ import { LoginComponent } from './Components/login/login.component';
     CalendarComponent,
     HomeComponent,
     NavMenuComponent,
-    SearchComponent,
-    UserComponent,
-    ArticleComponent,
-    LoginComponent,
+    //SearchComponent,
+    //UserComponent,
+    //ArticleComponent,
+    //LoginComponent,
+   //ArticleCommentComponent,
 
    
   ],
