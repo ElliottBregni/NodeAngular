@@ -11,9 +11,15 @@ import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { CalendarComponent } from './Components/calendar/calendar.component';
 import { NavMenuComponent } from './Components/navmenu/navmenu.component';
-import { HomeComponent } from './Components/home/home.component';
+//import { HomeComponent } from './Components/homes/home.component';
 import { RouterModule } from '@angular/router';
-
+import { AuthModule } from './components/auth/auth.module';
+import { HomeModule } from './components/home/home.module';
+import {
+  FooterComponent1,
+  HeaderComponent,
+  SharedModule
+} from './Components/shared';
 import 'flatpickr/dist/flatpickr.css';
 //import { SearchComponent } from './Components/search/search.component';
 //import { UserComponent } from './Components/user/user.component';
@@ -27,8 +33,10 @@ import 'flatpickr/dist/flatpickr.css';
   declarations: [
     AppComponent,
     CalendarComponent,
-    HomeComponent,
+    //HomeComponent,
     NavMenuComponent,
+    SharedModule,
+    HomeModule
     //SearchComponent,
     //UserComponent,
     //ArticleComponent,
@@ -52,7 +60,7 @@ import 'flatpickr/dist/flatpickr.css';
     }),
      RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: 'home', component: HomeComponent },
+      { path: 'home', component:HomeModule },
       { path: 'calendar', component: CalendarComponent },
     ]),
      BrowserAnimationsModule
