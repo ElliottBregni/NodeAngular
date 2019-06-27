@@ -5,10 +5,16 @@ var TYPES = require('tedious').TYPES;
 var Connection = require('tedious').Connection;
 
 var config = {
-    userName: 'jon',
-    password: 'jon',
-    server: 'desktop-381bn9g',
+    //dev
+    //*userName: 'jon',
+    //password: 'jon',
+    //server: 'desktop-381bn9g',
+    //prod
+    userName: 'bregnie',
+    password: 'FSu340096',
+    server: 'hubdb2.database.windows.net',
     // When you connect to Azure SQL Database, you need these next options.  
+    //prod options: { encrypt: true, database: 'Hub2.0' }
     options: { encrypt: true, database: 'SBG' }
 };
 var connection = new Connection(config);
@@ -39,14 +45,10 @@ function executeStatement(sql) {
     connection.execSql(request);
 }  
 /*starting point*/
-router.get('/', (req, res) => {
-    
-    res.send("api works");
 
-});
 /*api/artwork/*/
-router.get('/UserID', (req, res) => {
-    var sql = "SELECT * FROM ArtistID FOR JSON AUTO"
+router.get('/ho', (req, res) => {
+    var sql = "SELECT id FROM tblArticle WHERE id = 1 FOR JSON AUTO"
     
     res.send(executeStatement(sql));
     var result = "";

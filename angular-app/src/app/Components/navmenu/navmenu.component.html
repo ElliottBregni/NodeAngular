@@ -1,14 +1,15 @@
 <div class='main-nav'>
     <div class='navbar navbar-inverse'>
-        <div class='navbar-header'>
-            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
-                <span class='sr-only'>Toggle navigation</span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-            </button>
-            <a class='navbar-brand' [routerLink]="['/home']">ElliottBregni.com</a>
-        </div>
+      <div class='navbar-header'>
+        <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+        </button>
+        <a class='navbar-brand' [routerLink]="['/home']">ElliottBregni.com</a>
+
+      </div>
         <div class='clearfix'></div>
         <div class='navbar-collapse collapse'>
           <ul class='nav navbar-nav'>
@@ -27,6 +28,24 @@
               <a [routerLink]="['/calendar']">
                 <span class='glyphicon glyphicon-th-list'></span> Calendar
               </a>
+            </li>
+            <li>
+              <button class="btn btn-primary btn-margin"
+                      routerLink="/">
+                Home
+              </button>
+              </li>
+              <li> <button class="btn btn-primary btn-margin"
+                      *ngIf="!auth.isAuthenticated()"
+                      (click)="auth.login()">
+                Log In
+              </button>
+              </li>
+              <li><button class="btn btn-primary btn-margin"
+                      *ngIf="auth.isAuthenticated()"
+                      (click)="auth.logout()">
+                Log Out
+              <button>
             </li>
           </ul>
         </div>

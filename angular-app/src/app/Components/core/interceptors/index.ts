@@ -1,1 +1,1 @@
-export * from './http.token.interceptor';
+export { HttpTokenInterceptor} from './http.token.interceptor';

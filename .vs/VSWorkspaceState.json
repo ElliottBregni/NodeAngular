@@ -5,10 +5,12 @@
     "\\angular-app\\src",
     "\\angular-app\\src\\app",
     "\\angular-app\\src\\app\\Components",
+    "\\angular-app\\src\\app\\Components\\core",
+    "\\angular-app\\src\\app\\Components\\core\\services",
     "\\angular-app\\src\\app\\Components\\home",
-    "\\Server",
-    "\\Server\\Database"
+    "\\angular-app\\src\\environments",
+    "\\Server"
   ],
-  "SelectedNode": "\\Server\\api.js",
+  "SelectedNode": "\\angular-app\\src\\app\\Components\\home\\home.component.html",
   "PreviewInSolutionExplorer": false
 }

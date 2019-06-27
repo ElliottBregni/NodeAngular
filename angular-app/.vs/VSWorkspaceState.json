@@ -5,10 +5,9 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\Components",
-    "\\src\\app\\Components\\article",
-    "\\src\\app\\Components\\calendar",
-    "\\src\\app\\Components\\home"
+    "\\src\\app\\Components\\core\\services",
+    "\\src\\app\\Components\\navmenu"
   ],
-  "SelectedNode": "\\src\\styles.css",
+  "SelectedNode": "\\src\\app\\Components\\navmenu\\navmenu.component.html",
   "PreviewInSolutionExplorer": false
 }
